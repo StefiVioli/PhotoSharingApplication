@@ -97,6 +97,12 @@
     <Content Include="Content\BackgroundGradient.jpg" />
     <Content Include="Content\PhotoSharingStyles.css" />
     <Content Include="Global.asax" />
+    <Content Include="Error.html" />
+    <Content Include="Images\flower.JPG" />
+    <Content Include="Images\fungi.JPG" />
+    <Content Include="Images\orchard.JPG" />
+    <Content Include="Images\path.JPG" />
+    <Content Include="Images\pinkflower.JPG" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

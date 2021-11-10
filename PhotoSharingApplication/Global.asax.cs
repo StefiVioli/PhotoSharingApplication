@@ -13,7 +13,7 @@ namespace PhotoSharingApplication
     {
         protected void Application_Start()
         {
-           // Database.SetInitializer<PhotoSharingContext>(new PhotoSharingInitializer());
+            //Database.SetInitializer<PhotoSharingContext>(new PhotoSharingInitializer());
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             

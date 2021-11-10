@@ -7,7 +7,8 @@ using System.Globalization;
 using PhotoSharingApplication.Models;
 
 namespace PhotoSharingApplication.Controllers
-{
+{  
+    [HandleError(View = "Error")]
     [ValueReporter]
     public class PhotoController : Controller
     {
@@ -120,11 +121,10 @@ namespace PhotoSharingApplication.Controllers
         }
 
 
-
-
-
-
-
+        public ActionResult SlideShow()
+        {
+            throw new NotImplementedException("The Slideshow action is not yet ready.");
+        }
     }
-    
+
 }
