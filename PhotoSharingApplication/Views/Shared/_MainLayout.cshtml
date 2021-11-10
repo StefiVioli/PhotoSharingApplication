@@ -19,18 +19,27 @@
         </h1>
         <div class="clear-floats" />
 
-        <div id="topmenu">
+
+        @*<div id="topmenu">
             Zona del menú de navegación
         </div>
-
         <div id="breadcrumb">
             Zona de mapa del sitio
-        </div>
+        </div>*@
+
+        <nav id="topmenu">
+            <ul>
+
+                <li><a href="#">@Html.ActionLink("Home", "Index", "Home")</a></li>
+
+                <li><a href="#"></a>@Html.ActionLink("Photos", "Index", "Photo")</li>
+            </ul>
+        </nav>
 
         <div>
             @RenderBody()
         </div>
-  
+
     </div>
 </body>
 </html>
