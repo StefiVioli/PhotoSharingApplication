@@ -2,19 +2,10 @@
 
 
 @{
-    Layout = null;
+    ViewBag.Title = "Create New Photo";
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Create New Photo</title>
-</head>
-<body>
-    <div>
-        <h2>Create New Photo</h2>
+<h2>Create New Photo</h2>
 
         @using (Html.BeginForm("Create", "Photo", FormMethod.Post, new { enctype = "multipart/form-data" }))
         {
@@ -52,8 +43,6 @@
                 @Html.ActionLink("Back to List", "Index")
             </p>
         }
-    </div>
-</body>
-</html>
+>
 
 

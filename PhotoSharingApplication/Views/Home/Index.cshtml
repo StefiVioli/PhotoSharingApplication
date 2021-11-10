@@ -1,14 +1,19 @@
-﻿ViewBag.Title = "Welcome to Adventure Works Photo Sharing"
+﻿@{
+    ViewBag.Title = "Welcome to Adventure Works Photo Sharing";
+}
 
+<p>Welcome to Adventure Works Photo Sharing! Use this site to share your adventures.</p>
+
+<h2>Latest Photos:</h2>
+
+@Html.Action("_PhotoGallery", "Photo", new { number = 3 })
 
 <nav>
     <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Fotos</a></li>
-        <li><a href="#">Contacto</a></li>
+        <li><a href="#">@Html.ActionLink("Home", "Index", "Home")</a></li>
+        <li><a href="#"></a>@Html.ActionLink("Photos", "Index", "Photo")</li>
     </ul>
 </nav>
-
 
 @*<!DOCTYPE html>
 
